@@ -1,0 +1,95 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.title_bar h1{
+   font-size: 32px;
+   font-weight: 600;
+   background: linear-gradient(to right, violet, rgb(160, 129, 160));
+   text-align: center;
+   margin-bottom: 25px;
+}
+.title_bar ul{
+   display: flex;
+   justify-content: space-evenly;
+}
+.title_bar ul li{
+   list-style: none;
+   border-color: blue;
+}
+.title_bar ul li a{
+   font-size: 18px;
+   font-weight: 500;
+   text-decoration: none;
+}
+
+.title_bar ul li a:hover{
+   color: black;
+   background-color: orange;
+   transition: 0.3s;
+}
+
+.wrapper{
+   display: flex;
+   margin-top: 25px;
+}
+.main_area_1{
+   
+   flex-wrap: wrap;
+   flex: 3;
+   background-color: aquamarine;
+   border-radius: 10px;   
+}
+.cont h1{
+   font-size: 16px;
+}
+.cont div p{
+   font-weight: 600;
+}
+
+.sub_area{
+   flex: 1;
+}
+.sub_cont p{
+   font-size: 16px;
+   text-align: center;
+}
+.sub_cont{
+   background-color: violet;
+   border-radius: 20px;
+}
+
+.sales p{
+   background-color: lightyellow;
+}
+p.service{
+   font-size: 32px;
+   font-weight: 600;
+   margin-bottom: 3px;
+}
+div.sales{
+   font-size: 25px;
+   margin-top: 25px;
+}
+
+#switch{
+   flex: 1;
+   text-align: right;
+   margin-left: 3px;
+   margin-bottom: 6px;
+}
+#switch input[type="radio"]{
+   display    : none;
+}
+#switch label{
+   display    : inline-block;
+   border     : 1px solid #ccc;
+   box-shadow : 2px 2px #999;
+   padding    : 2px 6px;
+}
+
+#switch input[type="radio"]:checked + label {
+   background : lightgreen;
+}
